@@ -17,7 +17,7 @@
   grid-template-rows: repeat(2, 1fr) 5fr 1fr; */
 
   /******** OR ************/
-  /* grid-template: 1fr 1fr 5fr 1fr / 1fr 3fr; */
+  grid-template: 1fr 1fr 5fr 1fr / 1fr 3fr;
   gap: 5px;
 }
 
