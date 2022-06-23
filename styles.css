@@ -7,14 +7,49 @@
   min-height: 100vh;
   text-align: center;
   font-size: 30px;
+  display: grid;
+
+  /* grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr 5fr 1fr; */
+
+  /******** OR ************/
+  /* grid-template-columns: 1fr 3fr;
+  grid-template-rows: repeat(2, 1fr) 5fr 1fr; */
+
+  /******** OR ************/
+  /* grid-template: 1fr 1fr 5fr 1fr / 1fr 3fr; */
+  gap: 5px;
 }
 
 header {
   background: #ffcdd2;
+
+  /* grid-column-start: 1;
+  grid-column-end: 3; */
+
+  /******** OR ************/
+  /* grid-column: 1 / span 2; */
+
+  /******** OR ************/
+  /* grid-area: 1 / 1 / 2 / 3; */
+
+  /******** OR ************/
+  grid-column: 1 / 3;
 }
 
 aside {
   background: #e1bee7;
+  /* grid-row-start: 2;
+  grid-row-end: 4; */
+
+  /******** OR ************/
+  /* grid-row: 2 / span 2; */
+
+  /******** OR ************/
+  /* grid-area: 2 / 1 / 4 / 2; */
+
+  /******** OR ************/
+  grid-row: 2 / 4;
 }
 
 nav {
@@ -27,4 +62,15 @@ article {
 
 footer {
   background: #ffecb3;
+  /* grid-column-start: 1;
+  grid-column-end: 3; */
+
+  /******** OR ************/
+  /* grid-column: 1 / span 2; */
+
+  /******** OR ************/
+  /* grid-area: 4 / 1 / 5 / 3; */
+
+  /******** OR ************/
+  grid-column: 1 / 3;
 }
